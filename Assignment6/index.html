@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div-tag</title>
+
+    <style>
+        *{padding: 0%; margin: 0%;}
+        body {
+            background-color: darkgrey;
+            
+        }
+        #container {
+            display: inline-flex;
+        }
+        .Box {
+            width: 250px;
+            height: 350px;
+            background-color:whitesmoke;
+            border-radius: 5px;
+            justify-content: center;
+            overflow: hidden;
+            text-align: justify;
+            box-shadow: 10px 10px 8px #888888;
+            padding: 5px;
+            font-family:Verdana;
+            font-size: 14px;
+            margin-left: 6px;
+               }
+        #image img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 5px;
+            padding-top: 10px;
+        }
+        #read_more  {
+            justify-content: center;
+            padding-left: 65px;
+            padding-top: 8px;;
+            border-radius: 10px;
+            background-color: red;
+            margin: 10px 16px;
+            height: 38px;
+        }
+        #read_more:hover {
+            background-color: blue;
+        }
+        #read_more a{
+            color: white;
+        }
+       
+    </style>    
+</head>
+<body>
+    <h1 style="text-align: center;">CREATE THE FOLLOWING LAYOUT USING CSS LAYOUT PROPERTY</h1>
+
+    <div id="container">
+        <div class="Box">
+            <div id="image">
+                <img src="./images/html.png" alt="Introduction to HTML" width="220px" height="110px">
+            </div id="heading">
+            <h3>Introduction to HTML</h3>
+            <div>
+                <p>HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.
+                    Hypertext refers to the way in which Web pages (HTML documents) are linked together.
+                    
+                </p>
+            </div>
+            <div id="read_more">
+                <a href="../Assignment5/Introduction/introToHTML.html">Read More</a>
+            </div>
+        </div>
+    </div>
+    
+        <div class="Box">
+            <div id="image">
+                <img src="./images/css.png" alt="Introduction to CSS" width="220px" height="110px">
+            </div>
+            <h3>Introduction to HTML</h3>
+            <div>
+                <p>HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.
+                    Hypertext refers to the way in which Web pages (HTML documents) are linked together.
+                    
+                </p>
+            </div>
+            <div id="read_more">
+                <a href="../Assignment5/Introduction/introToCSS.html">Read More</a>
+            </div>
+        </div>
+    
+        <div class="Box">
+            <div id="image">
+                <img src="./images/js.png" alt="Introduction to JS" width="220px" height="110px">
+            </div>
+            <h3>Introduction to HTML</h3>
+            <div>
+                <p>HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.
+                    Hypertext refers to the way in which Web pages (HTML documents) are linked together.
+                    
+                </p>
+            </div>
+            <div id="read_more">
+                <a href="../Assignment5/Introduction/introToJS.html">Read More</a>
+            </div>
+        </div>
+    
+        <div class="Box">
+            <div id="image">
+                <img src="./images/bootstrap.png" alt="Introduction to BootStrap" width="220px" height="110px">
+            </div>
+            <h3>Introduction to HTML</h3>
+            <div>
+                <p>HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.
+                    Hypertext refers to the way in which Web pages (HTML documents) are linked together.
+                    
+                </p>
+            </div>
+            <div id="read_more">
+                <a href="../Assignment5/Introduction/introToBootStrap.html">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
