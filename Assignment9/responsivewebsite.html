@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=ss, initial-scale=1.0">
+    <title>Website Layout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="../Assignment6/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <input type="checkbox" id="chk" />
+      <label for="chk" class="show-btn">
+        <i class="fa fa-bars"></i>
+      </label>
+            <ul class="menu">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#circle-container">Team</a>
+                    <div class="drop2">
+                        <ul>
+                            <li><a href="#circle-container">Member A</a></li>
+                            <li><a href="#circle-container">Member B</a></li>
+                            <li><a href="#circle-container">Member C</a></li>
+                            <li><a href="#circle-container">Member D</a></li>
+                            
+                        </ul>
+                    </div></li>
+                <li><a href="#Technologoies">Technologies</a>
+                    <div class="drop1">
+                        <ul>
+                            <li><a href="#Technologies">HTML5</a></li>
+                            <li><a href="#Technologies">CSS3</a></li>
+                            <li><a href="#Technologies">JavaScript</a></li>
+                            <li><a href="#Technologies">BootStrap</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="#contact">Contact</a></li>
+                <label for="chk" class="hide-btn">
+                    <i class="fa fa-times"></i>
+                  </label>
+            </ul>
+
+        </div>
+        <a name="top"></a>
+        <div id="banner">
+            <h2 style="color: black;">PRACTICAL - 9</h2>
+
+        </div>
+        <div id="circle-container">
+            <h2 id="team">Team Members</h2>
+
+            <div class="circle" id="c1">
+
+                <!-- <img class="avtar" src="./profile1.png" alt="Avtar"> -->
+            </div>
+            <div class="circle" id="c2">
+                <!-- <img class="avtar" src="./profile2.png" alt="Avtar"> -->
+            </div>
+            <div class="circle" id="c3">
+                <!-- <img class="avtar" src="./profile3.png" alt="Avtar"> -->
+            </div>
+
+            <div class="circle" id="c4">
+                <!-- <img class="avtar" src="./profile4.png" alt="Avtar"> -->
+            </div>
+            </div>
+            <div id="sec2-container">
+                <a name="about"></a>
+                <h2 id="about">About Us</h2>
+
+                <div id="left-side">
+                    <div class="left-content">
+                        <div id="left-p">
+                            <h2 style="text-align: center;">Main Content</h2>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nam cumque sequi id
+                                perferendis dolor deserunt ut nobis, aspernatur, modi velit voluptas, et officia eaque
+                                error atque fugit magnam. Cumque.
+                                Repellendus rerum reiciendis repellat nobis necessitatibus error eos eveniet laborum
+                                quod totam commodi adipisci enim vero eaque hic veniam quo odio dicta modi, alias
+                                accusantium nostrum placeat? Praesentium, minus nam?
+                                Quo fugiat fuga doloribus quisquam possimus! Expedita magni, iste, iure blanditiis
+                                ratione corporis voluptate officiis natus atque mollitia fugiat inventore illo repellat
+                                quod ut? Tempora doloremque odio at aspernatur distinctio.
+                                Aspernatur harum aut ullam ipsum quo provident earum doloremque optio dicta mollitia
+                                perspiciatis id eaque animi, exercitationem quaerat amet corrupti nobis nostrum quod
+                                rerum nulla aliquid in porro obcaecati. Laboriosam!
+                                Architecto impedit dolorem praesentium, sunt eos nostrum sint ratione enim, harum ipsa
+                                aut voluptates rerum error debitis. Vel, esse facere repellat necessitatibus adipisci
+                                culpa numquam sequi ex iusto ducimus explicabo.
+                                Accusamus repellendus animi odio est? Quae, ratione amet laboriosam in qui, quos quia
+                                repudiandae reprehenderit excepturi quidem consequatur sunt sit blanditiis explicabo
+                                quis dolores totam. Consectetur dolore velit doloremque dolorem?
+                                Non, laudantium? Sed quas quo aliquam itaque odio tenetur iusto. Quisquam sed
+                                consectetur tempore
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="right-side">
+                    <div class="artical" id="p1">
+                        <!-- <img class="project" src="./project1.png" alt="Project"> -->
+                        <h2 id="heading">Project 1</h2>
+                    </div>
+                    <div class="artical" id="p2">
+                        <!-- <img class="project" src="./project2.png" alt="Project"> -->
+                        <h2 id="heading">Project 2</h2>
+                    </div>
+                    <div class="artical" id="p3">
+                        <!-- <img class="project" src="./project3.png" alt="Project">  -->
+                        <h2 id="heading">Project 3</h2>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid-container">
+                <a name="Technologies"></a>
+                <h2 id="tech">Technologies</h2>
+
+
+                <div class="grid">
+                    <img src="../Assignment6/images/html.png" alt="Introduction to HTML" width="220px" height="110px">
+                    <h4>Introduction to HTML</h4>
+                    <p>HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web
+                        Pages.
+                        Hypertext refers to the way in which Web pages (HTML documents) are linked together.
+                        An HTML document is a text document, and it is human-readable.
+
+                    </p>
+                    <div id="read_more">
+                        <a href="../Assignment5/Introduction/introToHTML.html">Read More</a>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <img src="../Assignment6/images/css.png" alt="Introduction to CSS" width="220px" height="110px">
+                    <h4>Introduction to CSS</h4>
+                    <p>CSS is short for Cascading Style Sheets, and is the preferred way for setting the look and
+                        feel of a website. CSS is a markup language responsible for how your web pages will look like.
+                        It controls the colors, fonts, and layouts of your website elements..
+
+                    </p>
+                    <div id="read_more">
+                        <a href="../Assignment5/Introduction/introToCSS.html">Read More</a>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <img src="../Assignment6/images/js.png" alt="Introduction to JS" width="220px" height="110px">
+
+                    <h4>Introduction to JavaScript</h4>
+                    <p>JavaScript is a client-side scripting language of web developed by Netscape in 1995
+                        with the name LiveScript. JavaScript is used to build interactive websites with dynamic features
+                        and to validate form data.
+                        JavaScript is high-level,
+                        <!--dynamic and browser interpreted programming language-->
+
+                    </p>
+                    <div id="read_more">
+                        <a href="../Assignment5/Introduction/introToJS.html">Read More</a>
+                    </div>
+                </div>
+
+                <div class="grid">
+
+                    <img src="../Assignment6/images/bootstrap.png" alt="Introduction to BootStrap" width="220px"
+                        height="110px">
+                    <h3>Introduction to BootStrap</h3>
+
+                    <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first
+                        front-end web development. It contains CSS- and (optionally) JavaScript-based design templates
+                        for typography,
+                        forms, and other interface component
+                    </p>
+
+                    <div id="read_more">
+                        <a href="../Assignment5/Introduction/introToBootStrap.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------------------------------------------------------------------------- -->
+            <a name="contact"></a>
+            <h1>Contact</h1>
+            <div id="footer">
+                <p id="h7">Connect me @<a href="https://www.github.com/prachi0011" id="github">github/prachi0011</a>
+                    <br>
+                    <a href="#top">Back to top</a>
+                </p>
+
+            </div>
+    </div>
+</body>
+
+</html>
