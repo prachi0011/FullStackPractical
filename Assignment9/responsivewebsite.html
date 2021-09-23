@@ -8,20 +8,21 @@
     <title>Website Layout</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="../Assignment6/style.css">
+    <!-- <link rel="stylesheet" href="../Assignment6/style.css"> -->
 </head>
 
 <body>
     <div class="container">
         <div id="header">
             <input type="checkbox" id="chk" />
-      <label for="chk" class="show-btn">
-        <i class="fa fa-bars"></i>
-      </label>
-            <ul class="menu">
+            <label for="chk" class="show-btn">
+                <i class="fa fa-bars"></i>
+            </label>
+       <div class="menu">
+            <ul>
                 <li><a href="#top">Home</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#circle-container">Team</a>
+                <li><a href="#circle-container" class="team">Team</a>
                     <div class="drop2">
                         <ul>
                             <li><a href="#circle-container">Member A</a></li>
@@ -31,15 +32,16 @@
                             
                         </ul>
                     </div></li>
-                <li><a href="#Technologoies">Technologies</a>
-                    <div class="drop1">
+                <li><a href="#Technologoies" id="tech">Technologies</a>
+                    <!-- <div class="drop1">
                         <ul>
                             <li><a href="#Technologies">HTML5</a></li>
                             <li><a href="#Technologies">CSS3</a></li>
                             <li><a href="#Technologies">JavaScript</a></li>
                             <li><a href="#Technologies">BootStrap</a></li>
                         </ul>
-                    </div></li>
+                    </div> -->
+               </li>
                 <li><a href="#contact">Contact</a></li>
                 <label for="chk" class="hide-btn">
                     <i class="fa fa-times"></i>

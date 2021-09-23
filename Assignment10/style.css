@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:bisque;
+}
+header{
+    background-color: rgb(0, 128, 0);
+    width: 100%;
+    height: 90px;
+    display: inline-flex;
+    text-align: center;
+}
+nav{
+    margin-left: 25px;
+    line-height: 90px;
+}
+nav .show-btn, .hide-btn{
+    position: fixed;
+    font-size: 30px;
+    color: white;
+    transition: .4s;
+    top: 20;
+    left: 20;  
+}
+#chk{
+    visibility: hidden;
+    z-index: -100;
+    position: absolute;
+}
+.hide-btn{
+    opacity: 0;
+    /* margin-top: -13px; */
+}
+.heading{
+    display: inline-flex;
+    margin: auto;
+    line-height: 90px;
+    /* position: fixed; */
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+header h1{
+    float: right;
+    color: white;
+    font-size: 50px;
+    text-shadow: 7px 4px 6px black;
+    border-radius: 3px;
+    box-shadow: inset;
+}
+
+.menu{
+    /* display: none; */
+    list-style: none;
+    font-family: Arial;
+    font-size: larger;
+    background-color:rgb(0, 128, 0);
+    position: fixed;
+    width: 25%;
+    /* margin-left: -26px; */
+    height: 87vh;
+    top: 13%;
+    left: -100%;
+    /* box-shadow: 2px 3px 4px rgb(146, 145, 145); */
+    transition: 0.7s;
+    text-align: left;
+}
+.menu .fa{
+    padding-right: 5px;
+    align-items: left;
+}
+.menu li:not(:last-child){
+    padding: 8px;
+    /* margin: 15px 0; */
+    line-height: 30px;
+    transition: .4s;
+    border-bottom: 2px solid greenyellow;
+    /* left: -100%; */
+}
+.menu li:first-child{
+    margin-top: 60px;
+}
+.menu li:not(:last-child):hover{
+    background-color:rgb(103, 221, 103);
+    width: 24vw;
+    margin-left: 5%;
+}
+.social-links{
+    margin-top: 80px;
+    /* display: flex; */
+    justify-content: space-evenly;
+    text-align: center;
+}
+.social-links a{
+    padding: 0 6px;
+    font-size: 25px;
+    margin: 0 10px;
+}
+.social-links a:hover{
+    box-shadow: -1px 1px 2px 2px gray;
+    border-radius: 10px;
+    background-color: white;
+    height: 20px;
+    width: 20px;
+}
+.fa-instagram:hover{
+    color:hotpink;
+}
+.fa-facebook-square:hover{
+    color:blue;
+}
+.fa-whatsapp:hover{
+    color:greenyellow
+}
+.social-links a, .menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: azure;
+}
+
+#chk:checked ~ .menu
+{
+    left: 0;
+    /* display: block; */
+}
+#chk:checked ~ .show-btn
+{
+    opacity: 0;
+}
+#chk:checked ~ .hide-btn
+{
+    opacity: 1;
+    z-index: 50;
+}
+#para{
+    background-color: #fff;
+    width: 90%;
+}
+#chk:checked ~ #para
+{
+    width: 60%;
+    float: right;
+    background-color: rgb(45, 218, 180);
+}
+.main-content
+        {
+            float: right;
+            width: 100%;
+            transition: .7s;
+            padding: 20px;
+        }
+.main-content video
+        {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: auto;
+            margin-top: 50px;
+            
+        }
+.main-content p
+        {
+            text-align: justify;
+        }
+
+/* ====================================================================================================================================== */
+/* ====================================================================================================================================== */
+
+@media (max-width:600px){
+    body{
+        background-color:bisque;
+    }
+    header{
+        background-color: rgb(0, 128, 0);
+        width: 100%;
+        height: 90px;
+        display: inline-flex;
+        text-align: center;
+    }
+    nav{
+        margin-left: 25px;
+        line-height: 90px;
+    }
+    nav .show-btn, .hide-btn{
+        position: fixed;
+        font-size: 30px;
+        color: white;
+        transition: .4s;
+        top: 20;
+        left: 20;  
+    }
+    #chk{
+        visibility: hidden;
+        z-index: -100;
+        position: absolute;
+    }
+    .hide-btn{
+        opacity: 0;
+        /* margin-top: -13px; */
+    }
+    .heading{
+        display: inline-flex;
+        margin: auto;
+        line-height: 90px;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    header h1{
+        display: none;
+        /* float: right;
+        color: white;
+        font-size: 50px;
+        text-shadow: 7px 4px 6px black;
+        border-radius: 3px;
+        box-shadow: inset; */
+        
+    }
+    
+    .menu{
+        list-style: none;
+        font-family: Arial;
+        font-size: larger;
+        background-color:rgb(0, 128, 0);
+        position: fixed;
+        width: 100%;
+        /* margin-left: -26px; */
+        height: 87vh;
+        top: 13%;
+        left: -100%;
+        /* box-shadow: 2px 3px 4px rgb(146, 145, 145); */
+        transition: 0.7s;
+        text-align: left;
+    }
+    .menu .fa{
+        padding-right: 5px;
+        align-items: left;
+    }
+    .menu li:not(:last-child){
+        padding: 8px;
+        /* margin: 15px 0; */
+        line-height: 30px;
+        transition: .4s;
+        border-bottom: 2px solid greenyellow;
+    }
+    .menu li:first-child{
+        margin-top: 60px;
+    }
+    .menu li:not(:last-child):hover{
+        background-color:rgb(103, 221, 103);
+        /* padding: 10px; */
+        /* height: 60px; */
+    }
+    .social-links{
+        margin-top: 80px;
+        /* display: flex; */
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    .social-links a{
+        padding: 0 6px;
+        font-size: 25px;
+        margin: 0 10px;
+    }
+    .social-links a:hover{
+        box-shadow: -1px 1px 2px 2px gray;
+        border-radius: 10px;
+        background-color: white;
+        height: 20px;
+        width: 20px;
+    }
+    .fa-instagram:hover{
+        color:hotpink;
+    }
+    .fa-facebook-square:hover{
+        color:blue;
+    }
+    .fa-whatsapp:hover{
+        color:greenyellow
+    }
+    .social-links a, .menu a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: azure;
+    }
+    
+    #chk:checked ~ .menu
+    {
+        left: 0;
+        /* display: block; */
+    }
+    #chk:checked ~ .show-btn
+    {
+        opacity: 0;
+    }
+    #chk:checked ~ .hide-btn
+    {
+        opacity: 1;
+        z-index: 50;
+    }
+    #chk:checked ~ body
+    {
+        width: 80vw;
+    }
+    .main-content
+            {
+                float: right;
+                width: 100%;
+                transition: .7s;
+                padding: 20px;
+            }
+    .main-content video
+            {
+                width: 100%;
+                max-width: 600px;
+                display: block;
+                margin: auto;
+                margin-top: 50px;
+                
+            }
+    .main-content p
+            {
+                text-align: justify;
+            }
+}

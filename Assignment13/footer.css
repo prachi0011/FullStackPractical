@@ -1,0 +1,175 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;   
+}
+.main {
+    text-align: center;
+    margin-bottom: 30px;
+}
+footer{
+    background-color: rgb(31, 29, 29);
+    height: 90vh;
+    bottom: 0%;
+    display: block;
+    position: fixed;
+}
+.top-part{
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.top-part p{
+    color: gray;
+    justify-content: center;
+}
+.top-part h2{
+    text-transform: uppercase;
+    color: white;
+}
+.categories{
+    margin-left: 50px;
+}
+.quicklinks{
+    margin-left: 70px;
+}
+.contact{
+    /* float: right; */
+    margin-left: 70px;
+    margin-right: 0px;
+}
+footer ul{
+    text-transform: capitalize;
+    list-style-type: none;
+}
+footer ul li{
+    padding: 5px 0;
+}
+footer ul a{
+    text-decoration: none;
+    color: gray;
+}
+.about{
+    width: 40%;
+}
+.register{
+    padding-left: 40vw;
+    margin-top: -10vh;
+    margin-bottom: 10vh;
+    border-top: 1px solid gray;
+    padding-top: 20px;
+}
+.bottom{
+    margin-top: 100px;
+}
+.register button{
+    padding: 10px;
+    border-radius: 25px;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.register p{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-right: 25px;
+}
+.social{
+    width: 100vw;
+    background: transparent;
+    text-align: center;
+    margin-top: -10vh;
+    justify-content: center;
+    padding: 15px;
+    position: absolute;
+    border-top: 1px solid rgb(95, 95, 95);
+}
+.social ul{
+    
+}
+.social li{
+    display: inline;
+   font-size: 25px;
+}
+.social .fa{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 15px;
+    color: wheat;
+}
+.fa-facebook{
+    background-color: blue;
+}
+.fa-instagram{
+    background-color: palevioletred;
+}
+.fa-linkedin{
+    background-color: skyblue;
+}
+.fa-google{
+    background-color: red;
+}
+.fa-globe{
+    background-color: rgb(175, 22, 86);
+}
+.copyright{
+    margin-top: 18vh;
+    margin-bottom: 0;
+    padding: 20px;
+    background-color: rgb(59, 57, 57);
+    border-top: 1px solid gray;
+}
+.copyright p{
+    padding: 0;
+    margin: 0%;
+    color: gray;
+    text-align: center;
+    /* margin-top: 15px; */
+}
+
+@media only screen and (max-width: 700px) {
+   .top-part{
+       display: block;
+       background-color: rgb(44, 43, 43);
+       align-content: center;
+       margin: auto;
+   }
+   .top-part div{
+       margin: auto;
+       width:60%;
+       padding-bottom: 20px;
+   }
+   footer{
+       display: block;
+       position: relative;
+       background-color: rgb(44, 43, 43);
+   }
+   .register{
+       background-color: rgb(44, 43, 43);
+       padding-left: 23vw;
+    margin-top: -20vh;
+    margin-bottom: 10vh;
+    border-top: 1px solid gray;
+    padding-top: 20px;
+    display: block;
+   }
+   .about{
+       width: 80%;
+       text-align: center;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: justify;
+   }
+   .social{
+       background-color: rgb(44, 43, 43);
+   }
+       
+}
+
