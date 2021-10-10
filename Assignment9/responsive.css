@@ -3,47 +3,49 @@
   padding: 0;
   box-sizing: border-box;
 }
-.header{
+#header{
   display: inline-block;
   position: fixed;
   top: 0;
-  /* justify-content: center; */
-  /* align-items: center; */
+  /* background-color: rgb(5, 24, 65); */
+}
+#banner{
+  margin-top: 85px;
 }
 .show-btn, .hide-btn{
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 20;
+  left: 4%;
   font-size: 30px;
   transition: .4s;
   color: aliceblue;
-  /* z-index: 100; */
+  line-height: 80px;
 }
 #chk{
-  display: none;
-  z-index: -100;
+  /* display: none; */
   position: absolute;
+}
+#chk:checked ~.show-btn{
+  opacity: 1;
 }
 .hide-btn{
   opacity: 0;
 }
-
 .menu {
   background-color: rgb(5, 24, 65);
   width: 100vw;
-  /* margin: 0 200px; */
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
   }
 .menu ul{
-  /* margin: 0 100px; */
   display: inline-flex;
   list-style-type: none;
-  height: 80px;
   position: relative;
 }
 .menu li{
-  padding: 10px;
-  margin: 20px 30px;
   width: 130px;
+  margin: 0 15px;
 }
 .menu li a{
   text-decoration: none;
@@ -54,33 +56,48 @@
 .menu .drop2{
   display: none;
   position: fixed;
-  background-color:cornflowerblue;
+  background-color:rgb(5, 24, 65);
   color: black;
-  padding: 10px;
-  border-radius: 4px;
+  border-radius: 2px;
   font-family: arial;
   font-size: 17px;
-  width: 140px;
-  z-index: 1;
+  width: 130px;
+  z-index: 100;
+  margin-left: -120px;
+  margin-top: 60px;
+}
+.menu .drop2 ul{
+  text-align: center;
+
+}
+.menu .drop2 ul li a{
+  padding-right: 25px ;
 }
 .menu .fa{
-  display: none;
+  /* display: none; */
 }
 .menu li a:hover{
   background-color:cornflowerblue;
   color: black;
-  padding: 10px;
+  padding: 5px;
   border-radius: 4px;
   font-family: arial;
   font-size: 17px;
-  width: 140px;
+  width: 80px;
   height: 50px;
 }
 .menu li:hover .drop2{
   display: inline-block;
-  position: absolute;
-  margin-top: 32px;
-  margin-left: -40px;
+  /* position: absolute; */
+  /* margin-top: 42px; */
+  /* margin-left: -20px; */
+}
+.menu li:hover .drop2 ul{
+  display: block;
+}
+.menu li:hover .drop2 ul li{
+  width: 130px;
+  /* padding: 5px 0; */
 }
 
 @media only screen and (max-width: 850px){
