@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="shortcut icon" href="images.png" type="image/png">
+</head>
+<body >
+    <h1>Counter</h1>
+    <div class="counter">
+        <button class="sub" id="subtract" onclick="decrease();" disabled=true><i class="fa fa-minus" aria-hidden="true"></i></button>
+        <div class="display"><input type="text" id="inc" value="0"></input></div>
+        <!-- <div class="display" id="inc" value="0">0</div> -->
+        <button class="plus" onclick="increase();" id="increase"><i class="fa fa-plus" aria-hidden="true"></i></button>
+    </div>
+    <script>
+            var i = 0;
+            function increase() {
+                document.getElementById('inc').value = ++i;
+                if( i > 0){
+                    document.getElementById("subtract").disabled = false;
+                }
+            }
+            function decrease() {
+                if(i > 0){
+                document.getElementById('inc').value = --i;
+                }
+                if(i == 0){
+                    document.getElementById('subtract').disabled = true;
+                }
+            }
+    </script>
+</body>
+</html>

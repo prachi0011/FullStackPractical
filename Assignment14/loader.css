@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+    font-size: 45px;
+    color: rgb(50, 173, 132);
+}
+
+.counter
+{
+    height: 120px;
+    width: 320px;
+    border: 2px solid white;
+    background-color: darkcyan;
+    margin: auto;
+    display: flex;
+}
+.sub, .display input, .plus
+{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    margin: 24px;
+}
+#inc{
+    font-size: 30px;
+    font-weight: 800;
+    color: aqua;
+    border: 0ch;
+    background: transparent;
+}
+.fa, .num
+{
+    padding: 16px;
+    padding-top: 16px;
+}
+#loader{
+    /* display: none; */
+}
